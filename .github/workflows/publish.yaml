@@ -1,0 +1,17 @@
+name: publish
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v6
+      - run: cd config-dependency && pnpm publish --access public
+        env:
+          NPM_PKG_GITHUB_COM_AUTH_TOKEN: ${{ secrets.NPM_PKG_GITHUB_COM_AUTH_TOKEN }}
