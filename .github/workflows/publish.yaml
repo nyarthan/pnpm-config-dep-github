@@ -14,4 +14,4 @@ jobs:
       - uses: actions/setup-node@v6
       - run: cd config-dependency && pnpm publish --access public
         env:
-          NPM_PKG_GITHUB_COM_AUTH_TOKEN: ${{ secrets.NPM_PKG_GITHUB_COM_AUTH_TOKEN }}
+          NPM_PKG_GITHUB_COM_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
