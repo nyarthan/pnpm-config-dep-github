@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@nyarthan/pnpm-plugin-acme':
+        specifier: ^1.0.0
+        version: 1.0.0
+
+packages:
+
+  '@nyarthan/pnpm-plugin-acme@1.0.0':
+    resolution: {integrity: sha512-uc0rmy52Ls/hApTVD53AJHby2bsu6bHxbG/H8rlcm7URdnSp9NVu5CO/hCM9sTnTeap6TTYHz2gLwZR3WeddAw==, tarball: https://npm.pkg.github.com/download/@nyarthan/pnpm-plugin-acme/1.0.0/f0b36cf1c51e7de5116e8465da3ad718f64cdceb}
+
+snapshots:
+
+  '@nyarthan/pnpm-plugin-acme@1.0.0': {}
